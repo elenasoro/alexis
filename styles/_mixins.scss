@@ -1,0 +1,27 @@
+@mixin heading{
+    position: relative;
+    h1{
+      margin-top: -110px;
+      font-size: 50px;
+      font-family: $fontBrandon;
+      font-weight: bold;
+      color: $font-color-dark;
+      position: relative;
+    }
+    p{
+      font-size: 18px;
+      font-family: $fontBrandon;
+      color: $font-color-dark;
+    }
+    .heading__number{
+      p{
+        font-size: 250px;
+        font-family: $fontBrandon;
+        font-weight: bold;
+        opacity: 0.1;
+        line-height: 1;
+        left: 0;
+        right: 0;
+      }
+    }
+}

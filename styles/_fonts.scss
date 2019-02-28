@@ -1,0 +1,14 @@
+@font-face{
+  font-family: "Brandon";
+  src: url("../fonts/brandon/brandon-grotesque-light-58a8a4b38001d.otf") format("truetype");
+  }
+
+@font-face{
+    font-family: "Wisdom";
+    src: url("../fonts/wisdom/ThirstyScriptExtraBoldDemo.otf") format("truetype");
+    }
+
+
+  $fontBrandon: "Brandon";
+  $fontWisdom: "Wisdom";
+  $fontPoppins: 'Poppins', sans-serif;

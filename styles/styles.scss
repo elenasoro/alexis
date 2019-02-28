@@ -1,0 +1,1192 @@
+@import 'fonts';
+@import 'colors';
+@import 'mixins';
+@import 'animation';
+
+html{
+
+}
+body{
+
+}
+
+header{
+  background-color: $background-light;
+  .logo{
+    p{
+      font-family: $fontWisdom;
+      font-size: 35px;
+      color: $font-color-dark;
+    }
+
+  }
+}
+
+
+.logo_red{
+  color: $red;
+}
+
+.navigation__item{
+  font-family: $fontBrandon;
+  font-size: 16px;
+  color: $font-color-dark;
+  font-weight: bold;
+}
+
+.works{
+
+    background-color: rgba(0,0,0,0.3);
+  }
+
+
+
+
+.works__heading{
+  h1{
+    font-size: 60px;
+    color: $font-color-light;
+    font-family: $fontBrandon;
+    font-weight: bold;
+  }
+  button{
+    background-color: $red;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: $fontBrandon;
+    font-weight: bold;
+    color: $font-color-light;
+  }
+}
+
+.works__features{
+  p{
+    font-family: $fontBrandon;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  i{
+    font-size: 32px;
+  }
+}
+
+.works__price{
+  color: $green;
+}
+
+.works__time{
+  color: $blue;
+}
+
+.works__sutisfaction{
+  color: $yellow;
+}
+
+.about{
+  background-color: $background-light;
+}
+
+.about__img{
+  height: 700px;
+  width: 55%;
+  background-image: url('../images/03.jpg');
+  background-size: cover;
+  border: 5px solid $background-dark;
+}
+
+.about__text{
+
+  height: 550px;
+  width: 65%;
+  background-color: white;
+  position: relative;
+  top: 70px;
+  right: 50px;
+  color: $font-color-dark;
+  font-family: $fontBrandon;
+  position: relative;
+  h2{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+    line-height: 2;
+
+  }
+  .row{
+
+  }
+}
+
+.about__border{
+  height: 4px;
+  width: 25%;
+}
+
+.about__border_red{
+  background-color: $red;
+}
+
+.about__border_green{
+  background-color: $green;
+}
+
+.about__border_blue{
+  background-color: $blue;
+}
+
+.about__border_yellow{
+  background-color: $yellow;
+}
+
+.about__background{
+  p{
+    font-size: 300px;
+    font-family: $fontPoppins;
+    position: absolute;
+    top:0;
+    left:0;
+    font-weight: bold;
+    opacity: 0.1;
+    line-height: 1;
+  }
+
+}
+.focus{
+  background-color: #f7f7f7;
+
+}
+
+.focus__heading{
+  @include heading;
+}
+
+.focus__service{
+  i{
+    font-size: 50px;
+  }
+  h3{
+    font-size: 21px;
+    font-family: $fontBrandon;
+    font-weight: bold;
+    color: $font-color-light;
+
+  }
+  p{
+    font-size: 14px;
+    font-family: $fontBrandon;
+    line-height: 1.5;
+    color: $font-color-light;
+  }
+  &:hover{
+    transform: translateY(-20px);
+    transition-duration: .5s;
+  }
+}
+
+.focus__development{
+  border-bottom: 3px solid $red;
+  i{
+    color: $red;
+  }
+}
+
+.focus__photo{
+  border-bottom: 3px solid $green;
+  i{
+    color: $green;
+  }
+
+}
+
+.focus__design{
+  border-bottom: 3px solid $blue;
+  i{
+    color: $blue;
+  }
+}
+
+.focus__webdesign{
+  border-bottom: 3px solid $yellow;
+  i{
+    color: $yellow;
+  }
+}
+
+.col__container{
+
+  background-color: $background-dark;
+}
+
+.video{
+
+  background-color: black;
+  position: relative;
+
+}
+
+.video__play{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 80px;
+  color: white;
+  i{
+    color: #38c695;
+    font-size: 50px;
+    &:hover{
+      color: $green;
+    }
+  }
+  h4{
+    font-size: 30px;
+    font-family: $fontPoppins;
+  }
+  p{
+    font-size: 12px;
+    font-family: $fontPoppins;
+  }
+  button{
+    background-color: black;
+    border: none;
+    &:focus{
+      outline: none;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.portfolio__heading{
+  @include heading;
+}
+
+.portfolio{
+  background-color: $background-light;
+}
+
+.portfolio__project{
+
+  height: 280px;
+}
+
+.portfolio__project_one{
+  background-image: url('../images/project_1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio__project_two{
+  background-image: url('../images/project_2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio__project_three{
+  background-image: url('../images/project_3.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio__project_four{
+  background-image: url('../images/project_4.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio__project_five{
+  background-image: url('../images/project_5.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio__project_six{
+  background-image: url('../images/project_6.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio__project_seven{
+  background-image: url('../images/project_7.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio__project_eight{
+  background-image: url('../images/project_8.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio__project_nine{
+  background-image: url('../images/project-9.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio_onhover{
+  height: 280px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  i{
+    font-size: 50px;
+    color: white;
+  }
+}
+
+.portfolio_bottom{
+  background-color: white;
+  p{
+    font-size: 18px;
+    font-family: $fontPoppins;
+    color: $font-color-dark;
+  }
+}
+
+.portfolio__line{
+  width: 25%;
+  height: 3px;
+}
+
+.portfolio__line_red{
+  background-color: $red;
+}
+.portfolio__line_blue{
+  background-color: $blue;
+}
+.portfolio__line_green{
+  background-color: $green;
+}
+.portfolio__line_yellow{
+  background-color: $yellow;
+}
+
+.portfolio__block{
+  &:hover{
+    transform: translateY(-20px);
+    transition-duration: .5s;
+    .portfolio_onhover{
+      visibility: visible;
+      cursor: pointer;
+    }
+
+  }
+}
+
+.team__heading{
+  @include heading;
+}
+
+.team{
+  background-color: #f7f7f7;
+}
+
+.team__block{
+
+}
+
+.team__member{
+  border-top: 3px solid $background-light;
+  border-left: 3px solid $background-light;
+  border-right: 3px solid $background-light;
+  height: 350px;
+  background-image: url('../images/team1.png');
+  background-size: cover;
+
+}
+
+.team__member_bottom{
+  height: 25%;
+  background-color: $background-light;
+  h4{
+
+    font-family: $fontBrandon;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  p{
+    color: $font-color-dark;
+    font-family: $fontBrandon;
+
+    font-size: 13px;
+  }
+}
+
+.team__member_first{
+  background-image: url('../images/team1.png');
+  .team__member_bottom{
+    border-bottom: 3px solid $red;
+  }
+  h4{
+    color: $red;
+  }
+  .team__member_gradient{
+    background: linear-gradient(to top, $red, rgba(255,255,255, 0.1));
+  }
+}
+
+.team__member_second{
+  background-image: url('../images/team2.png');
+  .team__member_bottom{
+    border-bottom: 3px solid $green;
+  }
+  h4{
+    color: $green;
+  }
+  .team__member_gradient{
+    background: linear-gradient(to top, $green, rgba(255,255,255, 0.1));
+  }
+}
+
+.team__member_third{
+  background-image: url('../images/team3.png');
+  .team__member_bottom{
+    border-bottom: 3px solid $blue;
+  }
+  h4{
+    color: $blue;
+  }
+  .team__member_gradient{
+    background: linear-gradient(to top, $blue, rgba(255,255,255, 0.1));
+  }
+}
+
+.team__member_fourth{
+  background-image: url('../images/team4.png');
+  .team__member_bottom{
+    border-bottom: 3px solid $yellow;
+  }
+  h4{
+    color: $yellow;
+  }
+  .team__member_gradient{
+    background: linear-gradient(to top, $yellow, rgba(255,255,255, 0.1));
+  }
+  }
+
+
+.team__member_gradient{
+  height: 75%;
+}
+
+.team__triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent $background-light transparent;
+  visibility: hidden;
+}
+
+.team__block{
+  &:hover{
+   .team__triangle{
+     visibility: visible;
+   }
+  }
+}
+
+.team__about{
+  background-color: $background-light;
+  h4{
+    font-size: 30px;
+    font-family: $fontBrandon;
+    font-weight: bold;
+    color: $font-color-dark;
+  }
+  p{
+    font-size: 15px;
+    font-family: $fontBrandon;
+
+    color: $font-color-dark;
+  }
+}
+
+.team__icon{
+  border-right: 1px solid $background-dark;
+  img{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.icon_container{
+  color: $font-color-dark;
+  font-weight: bold;
+}
+
+.stats{
+  background-image: url('../images/coffee.png');
+}
+
+
+.stats__block{
+
+  p{
+    color: $font-color-light;
+    font-family: $fontBrandon;
+    font-size: 16px;
+  }
+}
+
+.stats__main-icon{
+  font-size: 50px;
+}
+
+.stats__numbers{
+
+  font-size: 32px;
+}
+
+
+.stats__block_red{
+  i{
+    color: $red;
+  }
+}
+
+.stats__block_green{
+  i{
+    color: $green;
+  }
+}
+
+.stats__block_blue{
+  i{
+    color: $blue;
+  }
+}
+
+.stats__block_yellow{
+  i{
+    color: $yellow;
+  }
+}
+
+.work__heading{
+  @include heading;
+}
+
+.work{
+  background-color: $background-light;
+  padding-bottom: 130px;
+}
+
+.work__block{
+  background-color: white;
+
+  z-index: 3;
+}
+
+.work__line{
+  height: 3px;
+  width: 100px;
+  background-color: $font-color-dark;
+  opacity: 0.2;
+  transform: rotate(125deg);
+  position: relative;
+  bottom: 20px;
+  left: 10px;
+}
+
+.work__number{
+  p{
+    font-size: 50px;
+    font-family: $fontBrandon;
+    font-weight: bold;
+    opacity: 0.2;
+    line-height: 1;
+    color: $font-color-dark;
+  }
+}
+
+.work__content{
+  h3{
+    font-size: 30px;
+    font-family: $fontBrandon;
+    font-weight: bold;
+    color: $font-color-dark;
+  }
+  p{
+    font-size: 15px;
+    font-family: $fontBrandon;
+    color: $font-color-dark;
+  }
+}
+
+.work__picture{
+
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.work__picture_gradient{
+  height: 100%;
+  width: 100%;
+
+}
+
+.work__project{
+  border-bottom: 3px solid $red;
+}
+
+.work__picture_gradient-red{
+  background: linear-gradient(to top, $red, rgba(255,255,255, 0.1));
+}
+
+.work__plan{
+  border-bottom: 3px solid $green;
+}
+
+.work__picture_gradient-green{
+  background: linear-gradient(to top, $green, rgba(255,255,255, 0.1));
+}
+
+.work__project-picture{
+  position: relative;
+  top: 100px;
+  right: 180px;
+  background-image: url('../images/project_8.png');
+}
+
+.work__plan-picture{
+  position: relative;
+  top: 80px;
+  left: 200px;
+  background-image: url('../images/project_7.jpg');
+}
+
+.work__picture_gradient-blue{
+  background: linear-gradient(to top, $blue, rgba(255,255,255, 0.1));
+}
+
+.work__design{
+  border-bottom: 3px solid $blue;
+}
+
+.work__design-picture{
+  position: relative;
+  top: 80px;
+  right: 180px;
+  background-image: url('../images/project_6.jpg');
+}
+
+.work__picture_gradient-yellow{
+  background: linear-gradient(to top, $yellow, rgba(255,255,255, 0.1));
+}
+
+.work__development{
+  border-bottom: 3px solid $yellow;
+}
+
+.work__development-picture{
+  position: relative;
+  top: 80px;
+  left: 200px;
+  background-image: url('../images/project-9.png');
+}
+
+.pricing__heading{
+  @include heading;
+}
+
+.pricing{
+  background-color: #f7f7f7;
+}
+
+.pricing__block{
+  background-color: white;
+  &:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: .5s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  h5{
+    font-size: 30px;
+    font-family: $fontBrandon;
+    font-weight: bold;
+    color: $font-color-dark;
+  }
+  p{
+    font-family: $fontPoppins;
+    color: $font-color-dark;
+    font-size: 15px;
+  }
+  button{
+    border-radius: 50px;
+
+  }
+}
+
+.pricing__circle{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+
+}
+
+.pricing__round{
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+
+}
+
+.pricing__price{
+  color: white;
+
+  h6{
+    font-family: $fontPoppins;
+    font-size: 26px;
+  }
+  p{
+    font-family: $fontBrandon;
+    font-size: 18px;
+    color: white;
+  }
+
+}
+
+.pricing__starter{
+  border-top: 3px solid $green;
+  button{
+    color: $green;
+    border: 2px solid $green;
+  }
+  .pricing__circle{
+    border: 3px solid $green;
+  }
+  .pricing__round{
+    background-color: $green;
+  }
+}
+
+.pricing__ultimate{
+  border-top: 3px solid $red;
+  button{
+    color: $red;
+    border: 2px solid $red;
+  }
+  .pricing__circle{
+    border: 3px solid $red;
+  }
+  .pricing__round{
+    background-color: $red;
+  }
+}
+
+.pricing__pro{
+  border-top: 3px solid $blue;
+  button{
+    color: $blue;
+    border: 2px solid $blue;
+  }
+  .pricing__circle{
+    border: 3px solid $blue;
+  }
+  .pricing__round{
+    background-color: $blue;
+  }
+}
+
+.testimonials__heading{
+  @include heading;
+}
+
+.testimonials{
+  background-color: $background-dark;
+  h1{
+    color: $font-color-light;
+  }
+  p{
+    color: $font-color-light;
+  }
+  .heading__number p{
+    color: $font-color-light;
+  }
+}
+
+.testimonials__photo{
+  height: 400px;
+
+  background-size: cover;
+  border: 10px solid $font-color-light;
+}
+
+.testimonials__quotes{
+  color: $background-light;
+  font-size: 70px;
+  opacity: 0.7;
+}
+
+.testimonials__comment{
+
+  .container{
+    background-color: white;
+    border-bottom: 3px solid $red;
+  }
+  p{
+    color: $font-color-dark;
+    font-family: $fontBrandon;
+    font-size: 15px;
+  }
+  .testimonials__sign{
+    font-family: $fontWisdom;
+    font-size: 24px;
+    color: black;
+    line-height: 0.8;
+  }
+  .testimonials__name{
+    color: black;
+    font-size: 18px;
+    font-family: $fontPoppins;
+    line-height: 0.8;
+  }
+  .testimonials__profession{
+    color: $red;
+    font-family: $fontBrandon;
+    font-size: 15px;
+    line-height: 0.8;
+  }
+}
+
+.testimonials__text{
+  position: relative;
+  bottom: 50px;
+}
+
+.testimonials__photo_client1{
+  background-image: url('../images/client1.png');
+}
+
+.testimonials__photo_client2{
+  background-image: url('../images/client2.png');
+}
+.testimonials__photo_client3{
+  background-image: url('../images/client3.png');
+}
+.testimonials__photo_client4{
+  background-image: url('../images/client4.png');
+}
+.testimonials__photo_client5{
+  background-image: url('../images/client1.png');
+}
+.testimonials__photo_client6{
+  background-image: url('../images/client2.png');
+}
+.testimonials__carousel{
+  position: relative;
+}
+.testimonials__carousel-list{
+  position: absolute;
+  left:0;
+
+  .testimonials__carousel-item{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: $background-dark;
+
+  }
+  .testimonials__carousel-item.active{
+    border: 2px solid $red;
+  }
+}
+
+.reason{
+  background-color: #f7f7f7;
+}
+.reason__block{
+  &:hover{
+    transform: skew(-10deg,10deg);
+    transition-duration: .5s;
+  }
+}
+.reason__heading{
+  @include heading;
+}
+
+.reason__heading{
+  i{
+    font-size: 60px;
+
+  }
+}
+
+.reason__title{
+  p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $fontPoppins;
+    color: $font-color-dark;
+  }
+}
+
+.reason__content{
+  p{
+    font-size: 15px;
+    color: $font-color-dark;
+    font-family: $fontBrandon;
+  }
+}
+
+.reason__heading{
+  i.red{
+    color: $red;
+  }
+}
+
+.reason__heading{
+  i.green{
+    color: $green;
+  }
+}
+
+.reason__heading{
+  i.blue{
+    color: $blue;
+  }
+}
+
+.reason__heading{
+  i.yellow{
+    color: $yellow;
+  }
+}
+
+.reason__start{
+  p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $fontPoppins;
+    color: $font-color-dark;
+  }
+  button{
+    background-color: $red;
+    border-radius: 20px;
+
+  }
+}
+
+.blog__heading{
+  @include heading;
+}
+
+.blog{
+  background-color: $background-light;
+}
+
+.blog__card_big{
+  &:hover{
+    .blog__hover{
+      display: block;
+      cursor: pointer;
+    }
+  }
+  img{
+    height: 430px;
+  }
+  h5{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $fontPoppins;
+    color: $font-color-dark;
+  }
+  p{
+    font-size: 15px;
+
+    font-family: $fontBrandon;
+    color: $font-color-dark;
+  }
+  a{
+    color: $font-color-dark;
+    font-weight: bold;
+  }
+}
+
+.blog__content_red{
+  border-bottom: 3px solid $red;
+}
+
+.blog__hover{
+  height: 430px;
+  position: absolute;
+  background: linear-gradient(to top, rgba(46, 49, 49, 0.5), rgba(255,255,255, 0.1));
+  display: none;
+}
+
+.blog__details_big{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.blog__author{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: $fontPoppins;
+  color: $red;
+  z-index: 100;
+}
+
+.blog__date{
+  font-size: 15px;
+
+  font-family: $fontPoppins;
+  color: white;
+  z-index: 100;
+}
+
+.blog__card_small{
+  @extend .blog__card_big;
+
+  h5{
+    font-size: 18px;
+  }
+}
+
+.blog__content_green{
+  a{
+    color: $green;
+  }
+  .blog__author{
+    color: $green;
+  }
+  .blog__date{
+    color: grey;
+  }
+  border-bottom: 3px solid $green;
+}
+
+.blog__content_yellow{
+  a{
+    color: $yellow;
+  }
+  .blog__author{
+    color: $yellow;
+  }
+  .blog__date{
+    color: grey;
+  }
+  border-bottom: 3px solid $yellow;
+}
+
+.blog__content_blue{
+  a{
+    color: $blue;
+  }
+  .blog__author{
+    color: $blue;
+  }
+  .blog__date{
+    color: grey;
+  }
+  border-bottom: 3px solid $blue;
+}
+
+.subscribe{
+  background-color: #f7f7f7;
+  .input-group{
+    width: 500px;
+    height: 50px;
+    border-radius: 30px;
+  }
+  input{
+    height: 50px;
+    border-radius: 30px;
+    background-color: #f7f7f7;
+  }
+  button{
+    border-radius: 30px;
+    background-color: $red;
+
+  }
+}
+
+
+.contact__heading{
+  @include heading;
+}
+
+.contact__form{
+  input{
+    text-align: center;
+    height: 50px;
+    font-family: $fontBrandon;
+  }
+  textarea{
+    text-align: center;
+    font-family: $fontBrandon;
+  }
+  button{
+    border-radius: 30px;
+    background-color: $red;
+  }
+}
+
+.footer__col{
+  background-color: $background-dark;
+  h5{
+
+    font-family: $fontBrandon;
+    font-weight: bold;
+  }
+  p{
+    color: $font-color-light;
+    font-family: $fontBrandon;
+  }
+}
+
+.footer__logo{
+  border-bottom: 3px solid $red;
+
+  p{
+    font-family: $fontWisdom;
+    font-size: 35px;
+    color: $font-color-light;
+  }
+
+}
+
+.footer__adressUsa{
+  h5{
+    color: $green;
+  }
+  border-bottom: 3px solid $green;
+}
+
+.footer__adressUk{
+  h5{
+    color: $blue;
+  }
+  border-bottom: 3px solid $blue;
+}
+
+.footer__social{
+  i{
+    font-size: 30px;
+    color: $font-color-light;
+    padding-right: 10px;
+  }
+  h5{
+    color: $yellow;
+  }
+  border-bottom: 3px solid $yellow;
+}
+
+@import 'media';
